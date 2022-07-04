@@ -1,0 +1,56 @@
+:root {
+    --clr-cyan: hsl(180, 66%, 49%);
+    --clr-violet: hsl(257, 27%, 26%);
+    --clr-red: hsl(0, 87%, 67%);
+
+    --clr-neutral-800: hsl(260, 8%, 14%);
+    --clr-neutral-700: hsl(255, 11%, 22%);
+    --clr-neutral-400: hsl(258, 7%, 63%);
+    --clr-neutral-300: hsl(0, 0%, 75%);
+    --clr-neutral-200: hsl(0, 0%, 92%);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: var(--clr-neutral-800);
+}
+
+.container {
+    width: min(89%, 75em);
+    margin-inline: auto;
+}
+
+i {
+    color: hsl(258, 7%, 63%);
+}
+
+p {
+    font-weight: 400;
+    color: var(--clr-neutral-400);
+    font-size: clamp(1rem, 3vw, 1.15rem);
+}
+
+input {
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 0;
+    padding: 0.7em 0.9em;
+    outline: 3.5px solid #fff;
+}
+
+.msg {
+    font-weight: 400;
+
+    @media(min-width: 800px) {
+        position: absolute;
+        bottom: 8%;
+        left: 5%;
+        font-size: 1.05rem;
+
+    }
+
+    i {
+        color: var(--clr-red);
+    }
+}

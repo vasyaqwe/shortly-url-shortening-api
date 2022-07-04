@@ -1,0 +1,12 @@
+@use '../base' as *;
+
+.header {
+    margin-top: min(7vw, 2.5rem);
+    position: relative;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

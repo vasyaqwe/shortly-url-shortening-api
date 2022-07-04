@@ -1,0 +1,63 @@
+@use '../base' as *;
+
+.btn {
+    cursor: pointer;
+    border: 0;
+    background-color: var(--clr-cyan);
+    color: #fff;
+}
+
+.btn--signup {
+    border-radius: 100vmax;
+    width: 100%;
+    padding-block: 0.75em;
+    display: inline-block;
+
+    @media(min-width: 800px) {
+        padding: 0.6em 1.75em;
+        display: block;
+    }
+}
+
+.btn--cta {
+    padding: 0.75em 2.25em;
+    border-radius: 100vmax;
+}
+
+.btn--shorten {
+    border-radius: 0.5rem;
+    padding-block: 0.7em;
+    width: 100%;
+}
+
+.btn--copy,
+.btn--copied {
+    display: block;
+    padding-block: 0.6em;
+    border-radius: 0.5rem;
+}
+
+.btn--copied {
+    background-color: var(--clr-violet);
+
+    &:hover {
+        background-color: hsl(257, 27%, 56%);
+    }
+}
+
+.nav-toggle {
+    background-color: transparent;
+}
+
+.btn--signup,
+.btn--cta,
+.btn--shorten,
+.btn--copy {
+    &:hover {
+        background-color: hsl(180, 66%, 69%);
+    }
+
+    &:active {
+        transform: translateY(3%);
+    }
+}
